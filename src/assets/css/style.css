@@ -1,0 +1,3117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+	overflow-x: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/segoeui.ttf);
+}
+@font-face {
+	font-family: Segoe UI;
+	font-style: bold;
+	font-weight: 600;
+	src: url(../fonts/segoeuib.ttf);
+}
+@font-face {
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/.ttf);
+}
+@font-face {
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/segoeui.ttf);
+}
+body {
+	text-align: left;
+	font: normal normal normal 15px/22px Segoe UI;
+	letter-spacing: 0px;
+	color: #707070;
+}
+.btn {
+	border-radius: 54px;
+	text-align: center;
+	border: 0;
+	min-width: 180px;
+	padding: 10px 20px;
+	text-align: center;
+	font: normal normal bold 14px/21px Segoe UI;
+	letter-spacing: 0px;
+	opacity: 1;
+}
+.btn-primary {
+	background: #606d5b;
+}
+.btn-primary:hover {
+	background: #606d5b;
+}
+.btn-primary:active ,.btn-primary:focus {
+	background: #606d5b !important;
+}
+.btn-secondary {
+	background: #f3f3f3 0% 0% no-repeat padding-box;
+	color: #606d5b;
+}
+.btn-secondary:hover {
+	background: #606d5b 0% 0% no-repeat padding-box;
+}
+.btn-light {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	color: #606d5b;
+}
+.btn-light:hover {
+	background: #606d5b 0% 0% no-repeat padding-box;
+	color: #fff;
+}
+.btn-dark {
+	background: #373737 0% 0% no-repeat padding-box;
+}
+.btn-dark:hover {
+	background: #000;
+}
+.btn-outline-dark {
+	border: 2px solid #373737;
+	background: transparent;
+	color: #373737;
+}
+.btn-outline-dark:hover {
+	background: #000;
+	border-color: #000;
+	color: #fff;
+}
+a {
+	text-decoration: none !important;
+}
+.whatsapp-img {
+	position: fixed;
+	right: 15px;
+	bottom: 150px;
+	z-index: 999;
+}
+.whatsapp-img a span {
+	border: 2px solid #114b5f;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	display: grid;
+	place-items: center;
+	background: #fff;
+	text-align: center;
+	font: normal normal bold 12px/12px Muli;
+	color: #50b36f;
+	opacity: 1;
+	border-radius: 50%;
+}
+.back-top {
+	position: fixed;
+	right: 15px;
+	bottom: 30px;
+	z-index: 999;
+	text-align: center;
+	text-decoration: underline;
+	font: italic normal normal 14px/20px Semplicita Pro;
+	letter-spacing: 0px;
+	color: #8e7b6b;
+	opacity: 1;
+}
+.back-top a {
+	color: #1a1a1a;
+}
+.sub-title {
+	font: normal normal 500 12px/22px Inter;
+	letter-spacing: 2.8px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.primary-link {
+	text-align: center;
+	font: italic normal normal 16px/24px Sitka Banner;
+	letter-spacing: 2.31px;
+	color: #713b0e !important;
+	opacity: 0.8;
+	display: flex;
+	align-items: center;
+}
+.primary-link .circle {
+	width: 50px;
+	height: 50px;
+	border: 2px solid #713b0e;
+	border-radius: 50%;
+	position: relative;
+}
+.primary-link .circle .line {
+	width: 100%;
+	border-top: 2px solid #713b0e;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transition: 0.3s;
+}
+.primary-link .circle .line:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	top: -2px;
+	right: 0px;
+	height: 10px;
+	border: 0;
+	border-top: 2px solid #713b0e;
+	rotate: 45deg;
+	transform-origin: right top;
+}
+.primary-link:hover .line {
+	left: 35px;
+	transition: 0.3s;
+}
+
+.primary-link:hover {
+	opacity: 1;
+}
+.heading {
+	text-align: left;
+	font: normal normal normal 60px/70px Playfair Display;
+	letter-spacing: 7px;
+	color: #000000;
+	opacity: 1;
+}
+.fixed {
+	background-color: #fff;
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 9999999999999;
+	-webkit-box-shadow: 0px 1px 8px #9999999e;
+	box-shadow: 0px 1px 8px #9999999e;
+	padding: 10px 0px !important;
+}
+/*header*/
+.topbar {
+	background: #e1ded978 0% 0% no-repeat padding-box;
+	padding: 12px 0;
+	border-bottom: 1px solid #70707094;
+}
+.topbar p {
+	font: normal normal normal 15px/18px Raleway;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+}
+header .navbar li {
+	position: relative;
+}
+header .navbar li a {
+	padding: 0;
+}
+header .navbar .nav-item .nav-link {
+	text-align: center;
+	font: normal normal normal 16px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #686868;
+	opacity: 1;
+	position: relative;
+	padding: 0;
+}
+header .navbar .nav-item .nav-link:hover,
+header .navbar .nav-item .nav-link.active {
+	color: #000;
+	font-weight: bold;
+}
+.submenu {
+	list-style: none;
+	padding: 15px;
+	background-color: #fff;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+	translate: -40px;
+}
+.submenu li a {
+	text-align: center;
+	display: block;
+	font: normal normal normal 16px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	padding: 10px !important;
+}
+header .navbar .nav-item:hover .submenu {
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s;
+}
+
+/* footer */
+footer {
+	position: relative;
+	z-index: 9;
+}
+footer .footer-top {
+	background-image: url(../img/home/footer-bg.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	background-color: #fff;
+}
+footer .footer-top .container {
+	padding: 40px 0px;
+}
+footer .footer-top .footer-menu ul li {
+	margin-bottom: 15px;
+}
+footer .footer-top .footer-menu ul li .fa {
+	color: #606d5b;
+}
+footer .footer-top .footer-menu ul li small {
+	text-align: left;
+	font: normal normal 600 10px/12px Segoe UI;
+	letter-spacing: 0.4px;
+	color: #000000;
+}
+footer .footer-top .footer-menu ul li span {
+	text-align: left;
+	font: normal normal 600 15px/20px Segoe UI;
+	letter-spacing: 0.6px;
+	color: #000000;
+}
+footer .footer-top .footer-menu ul li a {
+	text-align: left;
+	font: normal normal 600 14px/20px Segoe UI;
+	letter-spacing: 0.6px;
+	color: #000000;
+}
+footer .footer-title {
+	text-align: left;
+	font: normal normal bold 18px/27px Segoe UI;
+	letter-spacing: 0.8px;
+	color: #606d5b;
+	opacity: 1;
+	padding-bottom: 16px;
+	position: relative;
+	width: fit-content;
+}
+
+footer .footer-bottom {
+	padding: 7px 0px;
+	background: #606d5b;
+}
+footer .footer-bottom p {
+	margin: 0;
+	text-align: left;
+	font: normal normal 300 11px/28px Segoe UI;
+	letter-spacing: 0px;
+	color: #fff;
+	opacity: 1;
+}
+footer .footer-bottom p a {
+	color: #fff;
+}
+
+/* banner  */
+
+.banner {
+	position: relative;
+	z-index: 9;
+}
+/* .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+     position: absolute;
+}
+ .owl-carousel .owl-nav .owl-next:hover, .owl-carousel .owl-nav .owl-prev:hover {
+     background: transparent !important;
+}
+ .owl-carousel .owl-nav .owl-next {
+     right: -6%;
+}
+ .owl-carousel .owl-nav .owl-prev {
+     left: -6%;
+}*/
+
+.home1 {
+	padding: 100px 0;
+	position: relative;
+}
+.home1 .container {
+	position: relative;
+}
+.home1 .center-text .heading.text-start {
+	padding-left: 130px;
+	line-height: 1.4;
+}
+.home1 .center-text p.justify-content-end {
+	padding-left: 130px;
+}
+.home1 .center-text p.justify-content-start {
+	padding-right: 285px;
+}
+.home1 .home-link p {
+	display: flex;
+	width: 200px;
+	cursor: pointer;
+}
+.home1 .home-link2 p {
+	margin-left: -60px;
+}
+.home1 .home-link p img {
+	transition: 0.5s ease all;
+	position: relative;
+	display: inline-block;
+	translate: 0;
+}
+.home1 .home-link span {
+	border-top: 1px solid #707070;
+	font: normal normal bold 13px/20px Playfair Display;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+	min-width: 150px;
+	margin-top: 25px;
+	padding-top: 7px;
+}
+.home1 .home-link small {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #707070;
+	display: inline-block;
+	margin-top: 19px;
+	transition: 0.5s ease all;
+}
+.home1 .vertical-text {
+	font: normal normal bold 50px/50px Segoe UI;
+	background-color: #fff;
+	color: transparent;
+	text-shadow: 1px 4px 4px #fff, 0 0 0 #0000004f, 1px 2px 2px #ffffff;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	display: none;
+}
+.home1 .vertical-text1,
+.home1 .vertical-text2 {
+	position: absolute;
+	top: 50%;
+	left: -50px;
+	right: inherit;
+	translate: 0 -50%;
+}
+.home1 .vertical-text2 {
+	right: -50px;
+	left: inherit;
+}
+.home1 .home-link p:hover span {
+	opacity: 0;
+}
+.home1 .home-link p:hover small {
+	border-color: #000;
+	background-color: #000;
+	transition: 0.5s ease all;
+}
+.home1 .home-link1 p:hover img {
+	translate: -50px 175px;
+	/* top: 175px;    
+    left: -50px; */
+	rotate: -90deg;
+	transition: 0.5s ease all;
+}
+.home1 .home-link2 p:hover img {
+	translate: 70px 10px;
+	rotate: -90deg !important;
+	transition: 0.5s ease all;
+}
+.home1 .home-link p:hover a {
+	display: block;
+}
+
+.home2 {
+	padding: 100px 0 70px;
+}
+.home2 .carousel .row .row {
+	border-radius: 376px 0px 0px 0px;
+	opacity: 1;
+	background-image: url(../img/home/light.webp);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: cover;
+}
+.home2 .carousel .row .row .col-lg-6 {
+	overflow: hidden;
+}
+.home2 .carousel .row .row .col-lg-6 img {
+	border-radius: 0px 0px 0px 645px;
+	margin-left: 50px;
+	transition: 0.5s;
+	display: block;
+}
+.home2 .carousel .row .row .col-lg-6 img:hover {
+	border-radius: 0px 0px 0px 50px;
+	margin-left: 0px;
+	transition: 0.5s;
+}
+.home2 .carousel .row .row .text-slide {
+}
+.home2 .carousel .row .row .text-slide h2 {
+	text-align: left;
+	font: normal normal bold 20px/25px Playfair Display;
+	letter-spacing: 1.2px;
+	color: #000000;
+}
+.carousel-indicators {
+	position: inherit;
+	left: inherit;
+	right: inherit;
+	top: inherit;
+	bottom: inherit;
+	display: flex;
+	justify-content: start;
+	margin-top: -40px;
+	margin-left: 10%;
+}
+.indicators1 button {
+	width: 15px !important;
+	height: 15px !important;
+	border-radius: 50%;
+	border: 1px solid transparent !important;
+	background-color: #ffffff !important;
+	position: relative;
+	opacity: 1 !important;
+}
+.indicators1 button.active {
+	border-color: #c8c8c8 !important;
+}
+.indicators1 button::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -45% -50%;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.indicators1 button.active::after {
+	background-color: #606d5b;
+}
+.indicators2 {
+	margin-right: 50px;
+	justify-content: end;
+}
+.indicators2 button {
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 50% !important;
+	text-indent: inherit !important;
+	margin: 0 8px !important;
+}
+.indicators2 button img {
+	border-radius: 50% !important;
+}
+.home2 .carousel-control-prev,
+.home2 .carousel-control-next {
+	width: auto;
+	margin: 0;
+	bottom: inherit;
+	font-size: 30px;
+	color: #000;
+}
+.home2 .carousel-control-next {
+	display: flex;
+	align-items: center;
+}
+.home2 .carousel-control-next small {
+	width: 30px;
+	height: 1px;
+	background-color: #000;
+	display: inline-block;
+	margin-right: 5px;
+}
+.home2 .nav-div {
+	position: absolute;
+	width: 310px;
+	top: 41%;
+	left: 22%;
+}
+
+.home3 {
+	padding: 50px 0;
+	position: relative;
+}
+.home3 .heading {
+	font-size: 80px;
+}
+.home3 .big-text {
+	line-height: 20px;
+}
+.home3 .common-contact-text {
+}
+.home3 .common-contact-text .name {
+	text-align: left;
+	font: normal normal bold 18px/18px Segoe UI;
+	letter-spacing: 1px;
+	color: #94ab8b;
+	margin-bottom: 0;
+}
+.home3 .common-contact-text .name span {
+	font-weight: 400;
+	color: #606060;
+}
+.home3 .common-contact-text .name small {
+	text-align: left;
+	font: italic normal normal 13px/16px Segoe UI;
+	letter-spacing: 0px;
+	color: #606060;
+	opacity: 1;
+}
+.home3 .common-contact-text p {
+	text-align: right;
+	font: normal normal 300 18px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin-bottom: 0;
+}
+.home3 .map {
+	position: relative;
+}
+.home3 .map .map-overlay {
+	background: #ffffffde;
+	box-shadow: inset 0px 3px 6px #00000029;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: grid;
+	place-items: center;
+	opacity: 0;
+}
+.home3 .map .map-overlay h5 {
+	text-align: center;
+	font: normal normal bold 14px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.home3 .map .map-overlay p {
+	text-align: center;
+	font: normal normal 600 16px/22px Segoe UI;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+}
+.home3 .map:hover .map-overlay {
+	opacity: 1;
+}
+
+.page-title {
+	background-image: url(../img/about/page-title-bg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 0px;
+	position: relative;
+	z-index: 0;
+}
+.page-title::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff3d;
+	z-index: -1;
+}
+.page-title .page-title-content ul li {
+	font: normal normal 500 14px/24px Inter;
+	letter-spacing: 1.4px;
+	color: #ffffff;
+	margin: 0px 5px;
+}
+.page-title .page-title-content ul li a {
+	color: #ffffff;
+}
+.page-title .page-title-content .page-heading {
+	font: normal normal normal 38px/60px Eurostile;
+	letter-spacing: 0.76px;
+	color: #ffffff;
+	margin: 0;
+}
+.vertical-text {
+	writing-mode: vertical-rl;
+	/* text-orientation: upright; */
+	white-space: nowrap;
+	text-align: center;
+	font: normal normal normal 45px/30px Playfair Display;
+	letter-spacing: 4.2px;
+	color: #000000;
+	opacity: 1;
+}
+.about1 {
+	padding: 100px 0;
+}
+.about1 .left {
+	position: relative;
+}
+.about1 .left::after {
+	content: '';
+	position: absolute;
+	top: -80px;
+	right: 12px;
+	height: 300%;
+	border-left: 1px solid #707070;
+}
+.about2 {
+	padding: 100px 0;
+	position: relative;
+}
+.about2 .vision-box {
+	position: relative;
+	padding: 80px 15px;
+	box-shadow: inset 0px 3px 14px #6e6c673b;
+	border-radius: 80px;
+	opacity: 1;
+}
+.about2 .vision-box .title {
+	text-align: center;
+	font: normal normal 900 50px/60px Segoe UI;
+	letter-spacing: 3.5px;
+	color: #707070;
+	opacity: 1;
+	margin: 0;
+}
+.about2 .vision-box span {
+	text-align: center;
+	font: normal normal 600 18px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	display: block;
+	margin-bottom: 15px;
+}
+.about2 .vision-box p {
+	text-align: center;
+	color: #606d5b;
+	opacity: 1;
+	font-size: 14px;
+}
+.about2 .left {
+	border-top-right-radius: 20px;
+}
+.about2 .right {
+	border-top-left-radius: 20px;
+}
+
+.about3 {
+	position: relative;
+	padding: 100px 0px;
+}
+.about3::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 66%;
+	height: 100%;
+	background-image: url(../img/about/about3.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.about4 {
+	padding: 100px 0;
+	position: relative;
+}
+.about4 h6 {
+	text-align: right;
+	font: italic normal 600 16px/22px Segoe UI;
+	letter-spacing: 0px;
+	color: #1c1c1c;
+}
+.about4 .our-team-slider {
+	border-left: 1px solid #000;
+}
+.big-text {
+	font: normal normal normal 430px/200px Playfair Display;
+	color: #000;
+	/* scale: 1 1.1; */
+	display: inline-block;
+	transform-origin: bottom;
+}
+.about4 .vertical-slider {
+	position: relative;
+	height: 550px;
+	overflow-y: scroll;
+	border-left: 2px solid #707070;
+}
+.about4 .vertical-slider::-webkit-scrollbar {
+	display: none;
+}
+.about4 .arrows {
+	position: absolute;
+	left: -60px;
+	bottom: 30px;
+	font-size: 30px;
+}
+.about4 .arrows .fa {
+	cursor: pointer;
+	color: #606d5b;
+}
+
+/* Service page  */
+.service-banner {
+	background-image: url(../img/services/service-banner.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	display: grid;
+	place-items: center;
+}
+.service-banner .service-text {
+}
+.service-banner .service-text p {
+	text-align: center;
+	font: normal normal 600 16px/20px Segoe UI;
+	letter-spacing: 0.8px;
+	color: #000000;
+	margin-bottom: 0;
+}
+.service-banner .service-text h2 span {
+	text-align: center;
+	font: normal normal bold 50px/67px Segoe UI;
+	letter-spacing: 20px;
+	color: #606d5b;
+	position: relative;
+	display: inline;
+}
+.service-banner .service-text h2 span::before {
+	content: '';
+	position: absolute;
+	left: -80px;
+	top: 55%;
+	translate: 0 -50%;
+	width: 40px;
+	border-bottom: 1px solid #606d5b;
+}
+.service-banner .service-text h2 span::after {
+	content: '';
+	position: absolute;
+	right: -70px;
+	top: 55%;
+	translate: 0 -50%;
+	width: 40px;
+	border-bottom: 1px solid #606d5b;
+}
+.service-banner .service-text p a {
+	text-align: center;
+	font: normal normal 400 18px/25px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	padding: 0 40px;
+	position: relative;
+}
+.service-banner .service-text p a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	translate: 0 -50%;
+	width: 4px;
+	height: 4px;
+	background-color: #000;
+	border-radius: 50%;
+}
+.service-banner .service-text p .no-before:before {
+	display: none;
+}
+.all-services {
+	margin-top: -85px;
+	padding-bottom: 250px;
+}
+.all-services .service-box {
+	padding: 0 40px;
+}
+.all-services .service-box .number {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: inset 0px 3px 6px #00000029;
+	opacity: 1;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.all-services .service-box .number span {
+	font: normal normal normal 70px/130px Playfair Display;
+	color: #000;
+	position: relative;
+	z-index: 9;
+	display: block;
+	text-align: center;
+}
+.all-services .service-box .number::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 50%;
+	width: 100%;
+	background: #fff;
+}
+.all-services .service-box .service-name span {
+	display: block;
+	margin-bottom: 5px;
+}
+.all-services .service-box .service-name {
+	text-align: center;
+	font: normal normal bold 15px/20px Segoe UI;
+	letter-spacing: 0.6px;
+	color: #000000;
+}
+.all-services .service-box .img-box {
+	overflow: hidden;
+}
+.all-services .service-box .img-box img {
+	transition: 0.3s;
+}
+.all-services .service-box a {
+	text-align: center;
+	font: normal normal bold 15px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+	display: block;
+	position: relative;
+	translate: 0 -80px;
+	z-index: -1;
+	transition: 0.5s;
+}
+.all-services .service-box a span {
+	width: 1px;
+	height: 30px;
+	background-color: #606d5b;
+	margin: 0 auto 15px;
+	display: block;
+}
+.all-services .service-box:hover .number span {
+	color: #606d5b;
+}
+.all-services .service-box:hover .img-box img {
+	transition: 0.3s;
+	scale: 1.1;
+}
+.all-services .service-box:hover .service-name {
+	translate: 0 5px;
+	transition: 0.2s;
+}
+.all-services .service-box:hover a {
+	translate: 0 30px;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.feature {
+	padding-bottom: 100px;
+}
+.feature .col-lg-12 {
+}
+.feature .col-lg-12 p {
+	text-align: center;
+	font: normal normal 600 16px/20px Segoe UI;
+	letter-spacing: 2px;
+	color: #000000;
+	margin-bottom: 0;
+}
+.feature .col-lg-12 p span {
+	font: italic normal 400 14px/16px Segoe UI;
+	letter-spacing: 0.72px;
+}
+.feature .col-lg-12 h3 {
+	text-align: center;
+	font: normal normal 800 40px/55px Playfair Display;
+	letter-spacing: 0px;
+	color: #606d5b;
+}
+.feature .feature-box {
+	padding: 0 40px;
+}
+.feature .feature-box h5 {
+	font: normal normal bold 20px/30px Segoe UI;
+	letter-spacing: 1.56px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+	margin-bottom: 40px;
+}
+.feature .feature-box img {
+	margin-bottom: 50px;
+}
+
+/* service details page  */
+.service-details-banner {
+	padding: 100px 0;
+}
+.service-details-banner .container {
+	position: relative;
+}
+.service-details-banner .container:before {
+	content: '';
+	position: absolute;
+	right: 17%;
+	top: 0;
+	height: 100%;
+	width: 35%;
+	background-image: url(../img/services/planning.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.service-details-banner2 .container:before {
+	right: 12%;
+	background-image: url(../img/services/schedule-budget.webp);
+}
+.service-details-banner3 .container:before {
+	right: 12%;
+	background-image: url(../img/services/construction.webp);
+}
+.service-details-banner .numbers {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.service-details-banner .numbers div {
+	border-bottom: 2px solid #dcdcdc;
+	display: flex;
+	align-items: center;
+}
+.service-details-banner .numbers .num {
+	text-align: center;
+	font: normal normal normal 18px/24px Segoe UI;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+	margin-right: 25px;
+	position: relative;
+	padding: 5px 0;
+	display: inline-block;
+}
+.service-details-banner .numbers .num::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	border-bottom: 2px solid #707070;
+	width: 100%;
+	display: none;
+}
+.service-details-banner .numbers a.active::after,
+.service-details-banner .numbers a:hover::after {
+	display: block;
+}
+.service-details-banner .numbers a.active,
+.service-details-banner .numbers a:hover {
+	font: normal normal bold 28px/37px Segoe UI;
+}
+.service-details-banner .numbers .fa {
+	color: #606d5b;
+	font-size: 18px;
+}
+.for-mobile {
+	display: none;
+}
+.big-heading {
+	text-align: left;
+	font: normal normal normal 95px/80px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+	position: relative;
+}
+.big-heading span {
+	font: normal normal normal 50px/70px Playfair Display;
+	color: #000000;
+}
+
+.we-specialise {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+.we-specialise:after {
+	content: '';
+	position: absolute;
+	left: 202px;
+	top: -100px;
+	height: calc(100% + 100px);
+	border-left: 1px solid #707070;
+}
+.we-specialise2::after {
+	top: -200px;
+	height: calc(100% + 750px);
+}
+.we-specialise3::after {
+	top: -100px;
+	height: calc(100% + 650px);
+}
+.we-specialise .sec-title {
+	font: normal normal normal 22px/35px Playfair Display;
+	letter-spacing: 2.45px;
+	margin-bottom: 0;
+}
+.we-specialise .col-lg-12 .links {
+	margin-left: 50px;
+}
+.we-specialise .col-lg-12 .links a {
+	text-align: left;
+	font: normal normal bold 28px/40px Segoe UI;
+	letter-spacing: 3.4px;
+	color: #1e1e1e;
+	opacity: 1;
+	padding: 20px 80px;
+	background-color: #f4f5f3;
+	min-width: 550px;
+	display: block;
+	position: relative;
+}
+.we-specialise .col-lg-12 .links a span {
+	text-align: center;
+	font: normal normal bold 15px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	translate: 0 -50%;
+	z-index: -1;
+	transition: 0.3s;
+}
+.we-specialise .col-lg-12 .links a span small {
+	width: 30px;
+	height: 1px;
+	background-color: #606d5b;
+	display: inline-block;
+	margin-right: 15px;
+}
+.we-specialise .col-lg-12 .links a:hover,
+.we-specialise .col-lg-12 .links a.active {
+	background-color: #606d5b;
+	color: #fff;
+}
+.we-specialise .col-lg-12 .links a:hover span small,
+.we-specialise .col-lg-12 .links a.active span small {
+	background-color: #989b97;
+}
+.we-specialise .col-lg-12 .links a:hover span,
+.we-specialise .col-lg-12 .links a.active span {
+	right: -155px;
+	transition: 0.3s;
+	z-index: 9;
+}
+.we-specialise2 .col-lg-12 .links a:hover span,
+.we-specialise2 .col-lg-12 .links a.active span,
+.we-specialise3 .col-lg-12 .links a:hover span,
+.we-specialise3 .col-lg-12 .links a.active span {
+	right: -70px;
+}
+
+.feature-work {
+	padding-bottom: 100px;
+	color: #000;
+}
+.feature-work h5 {
+	text-align: left;
+	font: normal normal bold 24px/30px Segoe UI;
+	letter-spacing: 1.8px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+}
+.feature-work .owl-carousel .owl-stage-outer {
+	/* overflow: inherit !important; */
+}
+.feature-work .item {
+}
+.feature-work .item .main-img {
+}
+.feature-work .feature-work-box {
+	padding: 10px;
+}
+.feature-work .feature-work-box .img-box {
+	overflow: hidden;
+}
+.feature-work .feature-work-box .img-box .main-img {
+	box-shadow: 0px 3px 6px #00000087;
+	transition: 0.3s;
+}
+.feature-work .feature-work-box .feature-title {
+	padding: 40px 20px 10px;
+	position: relative;
+	/* direction: ltr; */
+	opacity: 0;
+}
+.feature-work .feature-work-box .feature-title::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 70%;
+	border-left: 1px solid #707070;
+}
+.feature-work .feature-work-box .feature-title h6 {
+	text-align: left;
+	font: normal normal bold 18px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin-bottom: 0;
+}
+
+.feature-work .feature-work-box .feature-title a {
+	text-align: right;
+	font: normal normal normal 14px/30px Playfair Display;
+	letter-spacing: 2.45px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+}
+.feature-work .feature-work-box .feature-title a img {
+	width: auto !important;
+	margin-right: 30px;
+	transition: 0.3s;
+}
+
+.feature-work .active .item .feature-title {
+	opacity: 1;
+}
+.feature-work .feature-work-box:hover .img-box img {
+	scale: 1.1;
+	transition: 0.3s;
+}
+.feature-work .feature-work-box:hover a {
+	text-shadow: 0 0 1px #000;
+}
+.feature-work .feature-work-box:hover a img {
+	margin-right: 15px;
+	transition: 0.3s;
+}
+.owl-nav {
+	position: absolute;
+	right: -250px;
+	bottom: 80px;
+	width: 170px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.owl-nav::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	width: 70%;
+	border-bottom: 1px solid #000;
+}
+.owl-nav button {
+	transition: 0.3s;
+}
+.owl-nav .owl-prev:hover {
+	transition: 0.3s;
+	translate: -8px 0;
+}
+.owl-nav .owl-next:hover {
+	transition: 0.3s;
+	translate: 8px 0;
+}
+.owl-nav button .fa {
+	color: #000;
+	font-size: 30px;
+}
+.owl-nav button:hover {
+	background: none !important;
+	color: #000;
+}
+
+.site-management .owl-nav {
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: relative;
+}
+.site-management .owl-nav a .fa {
+	color: #000;
+	font-size: 30px;
+}
+.site-management .owl-nav a:hover {
+	background: none !important;
+	color: #000000;
+}
+.site-management .owl-nav a {
+	background: none;
+	border: 0;
+}
+.site-management .owl-nav a span {
+	opacity: 0;
+	transition: 0.3s;
+	font: normal normal 400 10px/15px Segoe UI;
+	letter-spacing: 0.6px;
+	color: #000000;
+	text-transform: uppercase;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	translate: 110% -50%;
+	white-space: nowrap;
+}
+.site-management .owl-nav a:hover span {
+	opacity: 1;
+	transition: 0.3s;
+}
+.site-management {
+	padding-bottom: 80px;
+}
+.site-management .col-lg-5 {
+	padding-right: 100px;
+}
+
+/*products*/
+.shop-banner {
+	background: #fff 0% 0% no-repeat padding-box;
+	padding: 100px 0;
+}
+.shop-banner .shop-banner-text h1 {
+	text-align: left;
+	font: normal normal 500 55px/60px Playfair Display;
+	letter-spacing: 4.9px;
+	color: #000000;
+	opacity: 1;
+	position: relative;
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	margin-bottom: 0;
+}
+.shop-banner .shop-banner-text h1 span {
+	background-color: #fff;
+	position: relative;
+	padding-right: 30px;
+}
+.shop-banner .shop-banner-text h1::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	translate: -50% -20px;
+	width: 70%;
+	border-bottom: 1px solid #707070;
+}
+.shop-banner .shop-banner-text h1 a {
+	text-align: right;
+	font: normal normal normal 19px/26px Segoe UI;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+	background-color: #fff;
+	position: relative;
+	padding: 0px 135px 10px 30px;
+    transition: all ease 0.3s;
+}
+.shop-banner .shop-banner-text h1 a:hover {
+	color: #000000;
+}
+.shop-banner .shop-banner-text .product-box .product-img {
+	padding: 30px;
+	height: 200px;
+	border-radius: 50px 0px 0px 0px;
+    background: linear-gradient(0deg, #F1F1F1, transparent);
+    transition: all ease 0.3s;
+}
+.shop-banner .shop-banner-text .product-box .product-img:hover{
+    background: linear-gradient(0deg, #F1F1F1, #F1F1F1);
+}
+.shop-banner .shop-banner-text .product-box .product-img img {
+	width: 50%;
+	transition: 0.3s;
+}
+.shop-banner .shop-banner-text .product-box::after {
+	display: none;
+}
+.shop-banner .shop-banner-text .product-box .product-box-content .pro-name {
+	text-align: left;
+	font: normal normal normal 18px/22px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.shop-banner .shop-banner-text .product-box:hover .price {
+	color: #606d5b;
+	font: normal normal 600 15px/20px Segoe UI;
+}
+.shop-banner .shop-banner-text .product-box:hover .pro-name {
+	color: #606d5b;
+}
+.shop-banner .shop-banner-text .product-box:hover .product-img img {
+	translate: 0 -8px;
+	transition: 0.3s;
+}
+.shop-banner .shop-banner-text .product-box:hover .product-img,
+.shop-banner .shop-banner-text .product-box:hover .product-box-content {
+	translate: 0 0;
+}
+
+.filter {
+}
+.product-box {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	position: relative;
+}
+.tag {
+	text-align: center;
+	font: normal normal 300 12px/14px Segoe UI;
+	letter-spacing: 1.08px;
+	color: #ffffff;
+	background: #114b5f;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	display: inline-block;
+	padding: 4px 15px;
+	z-index: 99;
+	width: 50px;
+}
+.tag.success {
+	background: #6aae68;
+}
+.tag.danger {
+	background: #ff1c1c;
+	top: 40px;
+}
+.product-box {
+	position: relative;
+}
+.product-box .product-img {
+	opacity: 1;
+	text-align: center;
+	position: relative;
+	height: 300px;
+	padding: 20px 0 0px;
+	transition: 0.3s;
+}
+.product-box::after {
+	content: '';
+	position: absolute;
+	bottom: -7px;
+	width: 100%;
+	left: 0;
+	height: 5px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #0000000d;
+	border-radius: 5px;
+	opacity: 0;
+}
+
+.product-box .product-img img {
+	width: 100%;
+}
+.shop-page .shop-heading {
+	position: relative;
+	text-align: center;
+	padding: 80px 0;
+}
+.shop-page .shop-heading span {
+	text-align: center;
+	font: normal normal 500 80px/90px Playfair Display;
+	letter-spacing: 7px;
+	color: #000000;
+	opacity: 1;
+	background-color: #fff;
+	position: relative;
+	padding: 0 50px;
+}
+.shop-page .shop-heading::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 55%;
+	translate: 0 -50%;
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+.shop-page .product-box .product-img {
+	height: 280px;
+	display: grid;
+}
+.product-box:hover::after {
+	opacity: 1;
+	background: #363226 0% 0% no-repeat padding-box;
+}
+.product-box .product-img img {
+	width: 100%;
+	margin: auto;
+	object-fit: contain;
+	transition: 0.3s;
+}
+.product-box-content {
+	transition: 0.3s;
+}
+.product-box-content .pro-name {
+	text-align: center;
+	font: normal normal 600 16px/22px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.product-box-content .price {
+	text-align: center;
+	font: normal normal 600 15px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+}
+.product-box:hover .product-img,
+.product-box:hover .product-box-content {
+	translate: 0px -10px;
+	transition: 0.3s;
+}
+.product-box:hover .product-box-content .pro-name {
+	font: normal normal 500 16px/22px Montserrat;
+}
+.product-box:hover .product-box-content .price {
+	font: italic normal 300 17px/20px Montserrat;
+	color: #ed2830;
+}
+
+.product-category {
+	position: relative;
+	overflow: hidden;
+	margin-top: -60px;
+	padding: 170px 0 100px;
+}
+.product-category:before {
+	content: '';
+	position: absolute;
+	bottom: -70px;
+	left: 0;
+	width: 40%;
+	height: 120%;
+	background: #114b5f;
+	border-top-right-radius: 175%;
+	border-bottom-right-radius: 25%;
+}
+.product-category .category-text {
+	position: relative;
+	z-index: 9;
+	padding: 0 75px;
+}
+.product-category .category-text h3 {
+	text-align: left;
+	font: normal normal bold 50px/50px Segoe UI;
+	letter-spacing: 0px;
+	color: #d6eeb4;
+	opacity: 1;
+}
+.product-category .category-text p {
+	text-align: left;
+	font: normal normal 600 14px/18px Muli;
+	letter-spacing: 2.9px;
+	color: #ffffff;
+	opacity: 1;
+}
+.product-category .category-text a {
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	background: #fff;
+	color: #adde6b;
+	font-size: 20px;
+}
+.product-category .owl-carousel .owl-stage-outer {
+	/* overflow: inherit;
+    */
+}
+.product-category .category-box {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1.5px solid #ddeabd;
+	border-radius: 100px;
+	opacity: 1;
+	text-align: center;
+	padding: 20px 35px 35px;
+}
+.product-category .category-box img {
+	height: 120px;
+	width: auto !important;
+	margin: 20px auto 30px;
+}
+.product-category .category-box .category-name {
+	text-align: center;
+	font: normal normal 600 20px/25px Muli;
+	letter-spacing: 4.86px;
+	color: #020202;
+	opacity: 1;
+	margin-bottom: 30px;
+}
+.product-category .category-box a {
+	text-align: center;
+	font: normal normal normal 13px/20px Muli;
+	letter-spacing: 1.88px;
+	color: #114b5f;
+	border: 1px solid #114b5f;
+	border-radius: 20px;
+	opacity: 1;
+	display: inline-block;
+	padding: 3px 15px;
+}
+.product-category .category-box a:hover {
+	background: #114b5f;
+	color: #fff;
+}
+.view-pro a {
+	color: #b9b9b9;
+	font-size: 30px;
+}
+.view-pro a span {
+	text-align: center;
+	font: normal normal normal 13px/20px Raleway;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+	transition: 0.5s;
+	transform: translateY(-10px);
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+}
+.view-pro a:hover span {
+	transitionn: 0.5s;
+	transform: translateY(0px);
+	opacity: 1;
+	visibility: visible;
+}
+.product1 {
+	padding: 0px 0px 90px;
+	background: #fff;
+}
+.product1 .dropdown button,
+.filter-dropdown button {
+	text-align: center;
+	font: normal normal normal 20px/25px Playfair Display;
+	letter-spacing: 0.81px;
+	color: #000000;
+	opacity: 1;
+	background: #fff;
+	border: 1px solid #ffffff;
+	border-bottom: 0;
+	position: relative;
+	padding: 10px 20px 10px;
+	z-index: 99999;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.filter-dropdown .has-border {
+	border-color: #606d5b;
+}
+.filter-dropdown .has-border img {
+	rotate: 90deg;
+}
+.product1 .dropdown button,
+.filter-dropdown button img {
+	rotate: -90deg;
+}
+.product1 .dropdown button:after,
+.filter-dropdown button:after {
+	display: none;
+}
+
+.product1 .dropdown .dropdown-menu {
+	border-radius: 0;
+	border: 1px solid #3e4245;
+	top: -3px !important;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 0;
+	padding: 0;
+}
+.product1 .sort-dropdown .dropdown-menu .dropdown-item {
+	text-align: left;
+	font: normal normal 500 16px/28px Segoe UI;
+	letter-spacing: 0px;
+	color: #6b5746;
+	opacity: 1;
+	display: flex;
+	align-items: center;
+}
+.product1 .sort-dropdown .dropdown-menu .dropdown-item span {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #8d7460;
+	display: inline-block;
+	margin-right: 10px;
+}
+.product1 .sort-dropdown .dropdown-menu .dropdown-item:hover span {
+	background: #f9cfa9;
+}
+.filter-dropdown .filter-btn {
+	text-align: center;
+	font: normal normal normal 18px/34px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.filter-dropdown .filter-btn:hover,
+.filter-dropdown .filter-btn.active {
+	font-weight: bold;
+}
+
+.filter-dropdown .filter-dropdown-menu {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #606d5b;
+	padding: 0;
+	padding: 30px;
+	position: absolute;
+	width: 100%;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+	left: 50%;
+	top: 45px;
+	translate: -50% 0;
+}
+.show-filter {
+	opacity: 1 !important;
+	visibility: visible !important;
+	transition: 0.3s !important;
+}
+
+/* price filter  */
+.range-slider-outer .span {
+	text-align: left;
+	font: normal normal bold 18px/25px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.price-wrapper .slider {
+	height: 2px;
+	position: relative;
+	background: #b7b7b7;
+	border-radius: 5px;
+}
+.price-wrapper .slider .progress {
+	height: 100%;
+	left: 0%;
+	right: 0%;
+	position: absolute;
+	border-radius: 5px;
+	background: #b7b7b7;
+}
+.price-wrapper .range-input {
+	position: relative;
+}
+.price-wrapper .range-input input {
+	width: 100%;
+	height: 5px;
+	top: -3px;
+	background: none;
+	pointer-events: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	position: absolute;
+	left: 0;
+}
+.price-wrapper .price-input {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px;
+	overflow: hidden;
+}
+.price-wrapper .field input {
+	border: none;
+	font: normal normal normal 18px/34px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	outline: 0;
+	width: 60px;
+}
+.me-m15 {
+	margin-right: -15px;
+}
+.price-wrapper .field span {
+	font: normal normal normal 18px/34px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	width: 20px;
+}
+.price-wrapper .price-input .field p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+.price-wrapper input[type='range']::-webkit-slider-thumb {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: #606d5b;
+	pointer-events: auto;
+	-webkit-appearance: none;
+	border: 2px solid #606d5b;
+	position: relative;
+}
+/* price filter  end */
+
+/*checkbox */
+.form_group {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.form_group input {
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+}
+
+.form_group label {
+	position: relative;
+	cursor: pointer;
+	text-align: left;
+	font: normal normal 500 16px/28px Segoe UI;
+	letter-spacing: 0px;
+	color: #6b5746;
+	opacity: 1;
+}
+
+.form_group label:before {
+	content: '';
+	-webkit-appearance: none;
+	background-color: #fff3e6;
+	border: 2px solid #fff3e6;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+		inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+	padding: 8px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.form_group input:checked + label:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 10px;
+	border: solid #6b5746;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.pagination li a {
+	text-align: center;
+	font: normal normal normal 16px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #484848;
+	opacity: 1;
+	padding: 0px 14px;
+	border: none;
+	background-color: transparent;
+}
+.page-link.active,
+.page-link:hover {
+	background: transparent;
+	color: #606d5b;
+}
+.product-detail1 {
+	padding: 100px 0px;
+}
+.product-detail1 .carousel-inner {
+	background: #f5f5f5 0% 0% no-repeat padding-box;
+	opacity: 1;
+	text-align: center;
+	padding-top: 10px;
+	position: relative;
+}
+.product-detail1 .carousel-indicators {
+	position: absolute;
+	top: 0;
+	left: -90px;
+	display: block;
+	margin: 0;
+	right: inherit;
+}
+.product-detail1 .carousel-indicators button {
+	width: 70px;
+	height: 100px;
+	text-indent: inherit;
+	display: block;
+	margin: 0;
+	border-top: 0;
+	background: #f5f5f5;
+	margin-bottom: 10px;
+}
+.product-detail1 .carousel-indicators button img {
+}
+
+.product-detail1 .product-detail-slider .item {
+	box-shadow: 0px 3px 6px #00000029;
+	border-radius: 18px;
+	opacity: 1;
+	margin: 5px;
+}
+.product-detail1 .product-detail-slider .owl-nav button span {
+	border-left: 15px solid #636363;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	display: block;
+}
+.product-detail1 .product-detail-slider .owl-nav .owl-next {
+	right: -8%;
+}
+.product-detail1 .product-detail-slider .owl-nav .owl-prev {
+	left: -8%;
+}
+.product-detail1 .product-detail-slider .owl-nav .owl-prev span {
+	border-left: 0;
+	border-right: 15px solid #636363;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.product-detail1 .product-detail-slider .owl-nav button span img {
+	display: none;
+}
+.product-detail1 .product-box-details {
+	padding-left: 55px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+	display: none;
+}
+.breadcrumb .breadcrumb-item a,
+.breadcrumb .breadcrumb-item {
+	text-align: left;
+	font: normal normal normal 12px/26px Segoe UI;
+	letter-spacing: 0px;
+	color: #737373;
+	text-transform: uppercase;
+}
+.breadcrumb .breadcrumb-item.active {
+	color: #303030;
+	font-weight: bold;
+}
+.product-detail1 .carousel-item {
+	height: 500px;
+}
+.product-detail1 .product-box-details .product-name {
+	text-align: left;
+	font: normal normal 800 50px/67px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	margin: 0;
+}
+.product-detail1 .product-box-details .product-name .line {
+	width: 150px;
+	display: inline-block;
+	border-bottom: 2px solid #707070b7;
+	margin-bottom: 25px;
+}
+.product-detail1 .product-box-details .product-name span {
+	text-align: right;
+	font: normal normal 600 25px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+	margin-bottom: 15px;
+}
+
+.product-detail1 .product-box-details .product-price {
+	text-align: left;
+	font: normal normal 500 30px/50px Segoe UI;
+	letter-spacing: 2.4px;
+	color: #713b0e;
+	opacity: 1;
+}
+.product-detail1 .des {
+	text-align: left;
+	font: normal normal 500 16px/28px Segoe UI;
+	letter-spacing: 1.44px;
+	color: #c6a281;
+	opacity: 1;
+}
+.product-detail1 .product-box-details .categories h5 {
+	text-align: left;
+	font: normal normal 500 18px/25px Segoe UI;
+	letter-spacing: 1.44px;
+	color: #713b0e;
+	opacity: 1;
+}
+.product-detail1 .product-box-details .categories h5 a {
+	text-align: right;
+	text-decoration: underline !important;
+	font: normal normal medium 14px/30px Segoe UI;
+	letter-spacing: 0.96px;
+	color: #dfb48d;
+	opacity: 1;
+}
+.product-detail1 .product-box-details .categories .Colour {
+	display: flex;
+}
+.product-detail1 .product-box-details .categories .color {
+	position: relative;
+	display: flex;
+	margin-right: 10px;
+}
+.product-detail1 .product-box-details .categories .color label {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	box-sizing: content-box;
+	background: red;
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+.product-detail1 .product-box-details .categories .color label:hover,
+.product-detail1 .product-box-details .categories .color label.active {
+	/*    border: 2px solid #53361E;*/
+	box-shadow: 0 0 0px 2px #53361e;
+}
+.product-detail1 .product-box-details .categories .size {
+	display: flex;
+}
+.product-detail1 .product-box-details .categories .size .size-box {
+	border: 1px solid #d1ad8d;
+	width: 40px;
+	font: normal normal 500 12px/22px Segoe UI;
+	letter-spacing: 1.44px;
+	color: #d1ad8d;
+	opacity: 1;
+	display: grid;
+	place-items: center;
+	margin-right: 10px;
+	padding-top: 4px;
+}
+.product-detail1 .product-box-details .categories .size .size-box.active,
+.product-detail1 .product-box-details .categories .size .size-box:hover {
+	color: #713b0e;
+	border-color: #713b0e;
+}
+
+.product-detail1 .product-box-details .count-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 17px 0px 22px;
+}
+.product-detail1 .product-box-details .count-list p {
+	letter-spacing: 0.2px;
+	color: #676767;
+}
+.count-list ul {
+	padding: 5px 0px;
+	margin: 0px;
+	/*     width: 105px;*/
+}
+.count-list ul li.count-nummber {
+	width: 80px;
+	height: 40px;
+	border-radius: 30px;
+	background: #fff;
+	border: 1px solid #020202;
+	text-align: center;
+	font: normal normal normal 18px/34px Muli;
+	letter-spacing: 0px;
+	color: #020202;
+	opacity: 1;
+	margin: 0 15px;
+}
+.count-list ul li a {
+	font: normal normal normal 25px/34px Muli;
+	text-align: center;
+	color: #020202;
+	opacity: 1;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #020202;
+	opacity: 1;
+}
+.product-detail1 .product-box-details .btn {
+	min-width: 250px;
+}
+.product-detail1 .product-box-details .side-btn:hover {
+	opacity: 1;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.product-description {
+	padding: 100px 0 200px;
+}
+.product-description .nav-link {
+	text-align: center;
+	font: normal normal bold 20px/26px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000 !important;
+	text-transform: uppercase;
+	opacity: 1;
+	background: #fff !important;
+	border: 0 !important;
+	padding: 0 30px;
+}
+.product-description .nav-link.active {
+	font-weight: normal;
+}
+
+.on-sales {
+	background: #d4d4d438;
+	box-shadow: 0px 3px 6px #00000029;
+}
+.on-sales .sale-title {
+	position: relative;
+	text-align: center;
+	font: normal normal bold 30px/40px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin-bottom: 100px;
+	margin-top: -25px;
+}
+.on-sales .related-product-slider {
+	padding-bottom: 120px;
+}
+.on-sales .related-product-slider .item {
+	padding-bottom: 10px;
+}
+.on-sales .product-box .product-img {
+	background-color: #fff;
+}
+.on-sales .product-box .product-box-content .price {
+	margin-bottom: 0;
+}
+.on-sales .product-box::after {
+	opacity: 1;
+}
+
+/* portfolio login  */
+.portfolio-login {
+	padding: 150px 0;
+}
+.portfolio-login .cut-img div {
+	position: relative;
+	width: 35%;
+}
+.portfolio-login .cut-img div::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 35px;
+	height: 218%;
+	border-right: 1px solid #707070;
+}
+.portfolio-login .cut-img img {
+	width: 100%;
+}
+.portfolio-login .cut-img span {
+	font-size: 60px;
+	line-height: 80px;
+}
+.portfolio-login .login-box {
+	box-shadow: 0px 9px 38px #d8dad8;
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 40px 50px;
+}
+.portfolio-login .login-box h3 {
+	text-align: left;
+	font: normal normal bold 20px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #121836;
+	opacity: 1;
+}
+.portfolio-login .login-box p {
+	text-align: left;
+	font: normal normal normal 16px/21px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.portfolio-login .login-box p a {
+	color: #1749bf;
+    text-decoration: underline !important;
+}
+.portfolio-thankyou {
+	min-height: 90vh;
+	background-image: url(../img/reviews/bg.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	display: grid;
+	place-items: center;
+	/* box-shadow: 0px 3px 6px #00000029; */
+}
+.portfolio-thankyou h2 {
+	font: normal normal bold 30px/40px Playfair Display;
+	letter-spacing: 0px;
+	color: #1f1d30;
+	opacity: 1;
+}
+.portfolio-thankyou p {
+	font: normal normal normal 20px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #1f1d30;
+	opacity: 1;
+}
+.portfolio-thankyou p a {
+	color: #1749bf;
+	text-decoration: underline !important;
+}
+
+/* portfolio page  */
+.portfolio-banner {
+	padding: 100px 0;
+	position: relative;
+}
+.portfolio-banner::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 100%;
+	height: 120vh;
+	background-image: url(../img/reviews/portfolio-banner.webp);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+.portfolio-heading {
+	position: relative;
+}
+.portfolio-heading::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	translate: 0 -50%;
+	border-bottom: 1px solid #707070;
+	width: 100%;
+}
+.portfolio-heading small {
+	text-align: center;
+	font: normal normal normal 14px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+	position: relative;
+	background-color: #fff;
+	padding: 10px;
+}
+.portfolio-heading span {
+	text-align: center;
+	font: normal normal normal 35px/40px Playfair Display;
+	letter-spacing: 12px;
+	color: #000000;
+	opacity: 1;
+	position: relative;
+	background-color: #fff;
+	padding: 0 80px;
+}
+.all-portfolio {
+	padding-top: 100px;
+}
+.portfolio-box {
+	padding: 0 30px;
+	margin-bottom: 50px;
+	position: relative;
+}
+.portfolio-box .portfolio-img {
+	overflow: hidden;
+}
+.portfolio-box .portfolio-img img {
+	transition: 0.3s;
+}
+.portfolio-box .portfolio-text {
+}
+.portfolio-box .portfolio-text h3 {
+	text-align: left;
+	font: normal normal bold 35px/50px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.portfolio-box .portfolio-text a {
+	text-align: left;
+	font: normal normal normal 16px/30px Playfair Display;
+	letter-spacing: 1.4px;
+	color: #000000;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.portfolio-box:hover a img {
+	transition: 0.3s;
+	margin-left: 50px !important;
+}
+.portfolio-box:hover .portfolio-img img {
+	margin-left: -100px;
+	transition: 0.3s;
+}
+
+.portfolio-inner-banner {
+	padding: 100px 0;
+	background-image: url(../img/reviews/portfolio-banner.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.portfolio-inner-banner .portfolio-inner-text {
+	position: relative;
+	text-align: center;
+	padding: 0 70px;
+}
+.portfolio-inner-banner .portfolio-inner-text::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 25px;
+	height: 35px;
+	border-left: 6px solid #606d5b;
+}
+.portfolio-inner-banner .portfolio-inner-text::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 25px;
+	height: 35px;
+	border-left: 6px solid #606d5b;
+}
+.portfolio-inner-banner .portfolio-inner-text h1 {
+	text-align: center;
+	font: normal normal bold 35px/45px Segoe UI;
+	letter-spacing: 4px;
+	color: #000000;
+}
+.portfolio-inner-banner .center {
+	padding: 100px 0;
+}
+.portfolio-inner-banner .slick-slide {
+	scale: 0.8;
+	position: relative;
+	transition: 1s;
+}
+.portfolio-inner-banner .slick-slide::after {
+	/* content: '';
+    position: absolute;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.6895133053221288) 0%, rgba(255,184,222,0) 26%, rgba(255,220,239,0) 64%, rgba(255,255,255,0.6278886554621849) 100%); */
+}
+
+.portfolio-inner-banner .slick-slide.slick-current {
+	scale: 1.2;
+	transition: 1s;
+}
+.portfolio-inner-banner .slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	translate: 0 -50%;
+	border: 0;
+	background: none;
+}
+.portfolio-inner-banner .slider .prev-arrow {
+	left: -70px;
+	rotate: -180deg;
+}
+.portfolio-inner-banner .slider .next-arrow {
+	right: -70px;
+}
+
+/* careers page */
+.careers-banner {
+	background: none !important;
+}
+.careers-banner .careers-text {
+}
+.careers-banner .careers-text h1 {
+	text-align: center;
+	font: normal normal bold 40px/50px Playfair Display;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+}
+.careers-banner .careers-text p {
+	color: #1f1d30;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.careers-banner .careers-text::after,
+.careers-banner .careers-text::before {
+	border-color: #000000;
+}
+.all-careers {
+	background: #d4d4d445 0% 0% no-repeat padding-box;
+	padding: 70px 0;
+}
+.all-careers .form-row form .form-group {
+	position: relative;
+}
+.all-careers .form-row form .form-group input {
+	box-shadow: inset 0px 3px 6px #00000029;
+	border-radius: 34px;
+	font: normal normal normal 17px/27px Segoe UI;
+	letter-spacing: 0px;
+	color: #a4a4a4;
+	opacity: 1;
+	border: 0;
+	background-color: #fff;
+	padding: 10px 0 10px 70px;
+}
+.all-careers .form-row form .form-group img {
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	width: 20px;
+}
+.all-careers .form-row form .career-search-btn {
+	border: 0;
+	box-shadow: inset 0px 3px 6px #00000029;
+	border-radius: 34px;
+	opacity: 1;
+	background-color: #cfcfcf;
+	font: normal normal 800 16px/20px Playfair Display;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+}
+.all-careers .carrers-box {
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 25px 40px;
+}
+.all-careers .carrers-box p {
+	text-align: left;
+	font: normal normal 800 18px/20px Playfair Display;
+	letter-spacing: 0px;
+	color: #111136;
+	opacity: 1;
+}
+.all-careers .carrers-box .label-primary {
+	background-color: #cbd5c7;
+	text-align: center;
+	font: normal normal normal 13px/18px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	display: inline-block;
+	border-radius: 15px;
+	padding: 3px 15px;
+}
+.all-careers .carrers-box .button-side a,
+.upload-btn,
+.upload-btn2 {
+	background-color: #fff;
+	text-align: center;
+	font: normal normal normal 15px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #111136;
+	opacity: 1;
+	padding: 10px 10px 10px 25px;
+	border-radius: 30px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #111136;
+	transition: 0.3s;
+}
+.all-careers .carrers-box .button-side a span,
+.upload-btn span,
+.upload-btn2 span {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #ffffff4d;
+	display: inline-block;
+	padding: 5px;
+	display: grid;
+}
+.all-careers .carrers-box .button-side a:hover span img,
+.upload-btn2 span img,
+.upload-btn:hover span img {
+	filter: invert(1) brightness(11.5);
+	transition: 0.3s;
+}
+.all-careers .carrers-box .button-side a:hover,
+.upload-btn2,
+.upload-btn2:hover,
+.upload-btn:hover {
+	background-color: #606d5b;
+	color: #ffffff;
+	border-color: #606d5b;
+	box-shadow: 0px 5px 3px #1111361a;
+	transition: 0.3s;
+}
+
+/* career details page  */
+.career-details {
+	padding: 100px 0;
+}
+.career-details .navigate {
+	display: flex;
+	align-items: center;
+	font: normal normal bold 17px/25px Playfair Display;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+}
+.career-details .navigate a {
+	color: #b1b1b1;
+}
+.career-details .navigate span {
+	width: 70px;
+	height: 1px;
+	background-color: #707070;
+	display: inline-block;
+	margin: 0 15px;
+}
+.career-details .heading {
+	text-align: left;
+	font: normal normal 800 50px/64px Playfair Display;
+	letter-spacing: 0px;
+	color: #111136;
+	opacity: 1;
+	text-shadow: none;
+}
+.career-details .qlty {
+	text-align: left;
+	font: normal normal normal 18px/20px Segoe UI;
+	letter-spacing: 0px;
+	color: #1f1d30;
+	opacity: 1;
+}
+.career-details .merits {
+	text-align: left;
+	font: normal normal bold 20px/30px Segoe UI;
+	letter-spacing: 2.5px;
+	color: #1e1e1e;
+	opacity: 1;
+	position: relative;
+}
+.career-details .merits::before {
+	content: '';
+	position: absolute;
+	left: -30px;
+	top: 15px;
+	width: 5px;
+	height: 5px;
+	background-color: #000000;
+	border-radius: 50%;
+}
+.experience {
+}
+.experience-heading {
+	text-align: left;
+	font: normal normal bold 25px/35px Playfair Display;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+}
+.experience p {
+	text-align: left;
+	font: normal normal normal 18px/25px Segoe UI;
+	letter-spacing: 0px;
+	color: #1f1d30;
+	opacity: 1;
+}
+
+.contact1 {
+	padding: 100px 0 30px;
+	position: relative;
+}
+.contact1 .container2 {
+	padding: 50px 0;
+}
+.contact1 .cut-img {
+	width: 30%;
+	position: relative;
+}
+.contact1 .cut-img::before {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -70px;
+	height: calc(100% + 140px);
+	border-right: 1px solid #707070;
+}
+.contact1 h2 {
+	line-height: 1.3;
+}
+
+.contact1 .contect1-content p {
+	text-align: left;
+	font: normal normal normal 18px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #606d5b;
+	opacity: 1;
+}
+.contact1 .contect1-content .btn {
+	border: 0;
+	opacity: 1;
+	text-align: center;
+	font: normal normal normal 16px/22px Segoe UI;
+	letter-spacing: 0px;
+	color: #000000;
+	background: transparent;
+	min-width: 1px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.contact1 .form-control {
+    color: #373737;
+	border: 0;
+	border-radius: 0;
+	padding: 5px 0;
+	border-bottom: 1px solid #606d5b;
+}
+.contact1 label {
+	text-align: left;
+	font: normal normal normal 15px/22px Segoe UI;
+	letter-spacing: 0px;
+	color: #121836;
+}
+.contact1 textarea.form-control {
+	border: 1px solid #606d5b;
+}
+.form-control {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid #606d5b;
+	border-radius: 5px;
+	text-align: left;
+	font: normal normal normal 15px/22px Segoe UI;
+	letter-spacing: 0px;
+	color: #121836;
+	padding: 15px;
+}
+.form-control::placeholder {
+	font: normal normal normal 15px/22px Segoe UI;
+	opacity: 0.7;
+}
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+.submit-btn {
+	border-radius: 5px;
+	min-width: 1px;
+	height: 54px;
+	font-weight: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #94ab8b;
+	border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #606d5b;
+	border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #838c7f;
+}
+@media only screen and (min-width: 1599px) {
+	.big-heading {
+		font: normal normal normal 110px/100px Playfair Display;
+	}
+	.big-heading span {
+		font-size: 60px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.home2 img {
+		width: 100%;
+	}
+	.banner .carousel-indicators {
+		translate: 0 -50%;
+	}
+	.about2 .vision-box .title:after {
+		right: -20px;
+	}
+	.about1 .container-xxl .about-text h1 {
+		font-size: 100px;
+		line-height: 100px;
+		letter-spacing: 40px;
+	}
+    .home1 .center-text p.justify-content-end
+    {
+        font-size: 13px;
+        line-height: 1.5;
+        padding-left: 50px;
+    }
+    .home1 .center-text p.justify-content-start
+    {
+        padding-right: 75px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .home1 .center-text .heading
+    {
+        font-size: 50px;
+        line-height: 1;
+    }
+    .about2 .vision-box
+    {
+        padding: 30px 15px;
+        height: 215px;
+    }
+    .about2 .vision-box .title
+    {
+        font-size: 35px;
+    }
+    .about2 .vision-box span
+    {
+        font-size: 15px;
+    }
+    .about2 .vision-box
+    {
+        border-radius: 50px;
+    }
+	.big-heading
+	{
+		font: normal normal normal 70px/70px Playfair Display;
+	}
+	.big-heading span 
+	{
+		font: normal normal normal 35px/60px Playfair Display;
+	}
+	.we-specialise:after
+	{
+		display: none;
+	}
+	.owl-nav
+	{
+		bottom: 0;
+	}	
+	.site-management .col-lg-5 img 
+	{
+		width: 100px;
+	}
+	.site-management .heading
+	{
+		font: normal normal normal 45px/55px Playfair Display;
+		margin-bottom: 0 !important;
+	}
+	.site-management .col-lg-5
+	{
+		padding-right: 12px;
+	}
+
+}
+@media only screen and (max-width: 1099px) {
+    .indicators1, .home2 .nav-div
+    {
+        display: none;
+    }
+    .home3 .heading
+    {
+        font-size: 50px;
+    }
+    .home1 .vertical-text1, .home1 .vertical-text2
+    {
+        display: none !important;
+    }
+    .home1 .home-link p:hover img
+    {
+        translate: 0 !important;
+        rotate: 0deg ;
+    }
+    .home1 .home-link2 p:hover img
+    {
+        rotate: -180deg !important;
+    }
+    .home1 .home-link p:hover span, .home1 .home-link p:hover small 
+    {
+        opacity: 1 !important;
+    }
+    .about-text
+    {
+        align-items: start !important;
+    }
+    .about1 .left::after
+    {
+        top: -50px;
+        height: 150%;
+    }
+	.all-services .service-box .number span
+	{
+		font: normal normal normal 55px/100px Playfair Display;
+	}
+	.service-banner .service-text h2 span
+	{
+		font: normal normal bold 34px/60px Segoe UI;
+	}
+	.feature .feature-box
+	{
+		padding: 0;
+	}
+	.feature .feature-box h5
+	{
+		font: normal normal bold 16px/24px Segoe UI;
+	}
+	.feature .feature-box img
+	{
+		height: 80px;
+		margin-bottom: 30px;
+	}
+	.portfolio-inner-banner .portfolio-inner-text
+	{
+		padding: 0 30px;
+	}
+	.portfolio-inner-banner .portfolio-inner-text h1
+	{
+		font: normal normal bold 25px/30px Segoe UI;		
+	}
+	.portfolio-inner-banner .slider .next-arrow
+	{
+		right: 0;
+		z-index: 99;
+	}
+	.portfolio-inner-banner .slider .prev-arrow
+	{
+		left: 0;
+		z-index: 99;
+	}
+
+}
+@media only screen and (max-width: 991px)
+{
+    .home1 .center-text .heading
+    {
+        font-size: 35px;
+    }
+    header .navbar .nav-item .nav-link
+    {
+        padding: 5px 0;
+    }
+    .heading
+    {
+        font: normal normal normal 45px/55px Playfair Display;
+    }
+    .about1 .left::after
+    {
+        top: 28px;
+        height: calc(100% - 28px);
+    }
+	.all-services
+	{
+		padding-bottom: 70px;
+	}
+	.owl-nav
+	{
+		display: none;
+	}
+	.feature-work h5
+	{
+		margin-top: 20px;
+	}
+	.big-heading
+	{
+		font: normal normal normal 50px/70px Playfair Display;
+	}
+	.service-details-banner .container:before
+	{
+		right: 10%;
+		z-index: -1;
+	}
+	.site-management .col-lg-5
+	{
+		margin-bottom: 30px;
+	}
+	.portfolio-box
+	{
+		padding: 0;
+	}
+	.portfolio-box .portfolio-text
+	{
+		padding-top: 20px !important;
+	}
+	.portfolio-box .portfolio-text h3
+	{
+		font: normal normal bold 25px/40px Playfair Display;
+	}
+	.portfolio-login .cut-img div::after
+	{
+		height: calc(100% - 38px);
+	}
+	.career-details .heading
+	{
+		font: normal normal 800 42px/50px Playfair Display;
+	}
+
+}
+@media only screen and (max-width: 767px) {
+    .home1 .home-link p
+    {
+        width: auto;
+        justify-content: center;
+        text-align: center;
+        margin:  0 auto;
+    }
+    .home2 
+    {
+        background-color: #f5f5f5;
+    }
+    .home2 .carousel .row .row
+    {
+        flex-direction: column-reverse;        
+        background-image: none;
+        border-radius: 0;        
+    }
+    .home2 .carousel .row .row .col-lg-6 img
+    {
+        margin: 0;
+        border-radius: 20px !important;
+        margin-bottom: 30px;
+    }
+    .home1 .center-text
+    {
+        padding: 20px 0;
+    }
+    .big-text
+    {
+        font-size: 225px;
+    }
+    .vertical-text
+    {
+        writing-mode: rl-tb;
+        text-align: center;
+        line-height: 2;
+    }
+    .about3::before
+    {
+        z-index: -1;
+    }
+    .about2 .vision-box
+    {
+        margin-bottom: 30px;
+    }
+    .about3::before
+    {
+        height: 50%;
+        bottom: 0;
+        width: 100%;
+        top: inherit;
+        background-size: auto;        
+    }
+	.all-services .service-box
+	{
+		margin-bottom: 55px;
+	}
+	.feature .feature-box
+	{
+		padding-bottom: 40px;
+	}
+	.we-specialise .container .col-lg-12.d-flex 
+	{
+		display: block !important;
+	}
+	.we-specialise .col-lg-12 .links
+	{
+		margin-left: 0;
+		margin-top: 30px;
+	}
+	.we-specialise .col-lg-12 .links a
+	{
+		min-width: 1px;
+		font: normal normal bold 20px/20px Segoe UI;
+		padding: 20px 35px;
+	}
+	.feature-work .feature-work-box .feature-title h6
+	{
+		font: normal normal bold 14px/25px Segoe UI;
+	}
+	.feature-work .feature-work-box .feature-title a
+	{
+		font-size: 12px;
+	}
+	.feature-work .feature-work-box .feature-title a img
+	{
+		width: 20px !important;
+		margin-right: 10px;
+	}
+	.service-details-banner
+	{
+		padding-bottom: 0;
+	}
+	.site-management
+	{
+		padding-bottom: 0;
+	}
+	.service-details-banner .container:before
+	{
+		right: 0;
+	}
+	.we-specialise .col-lg-12 .links a
+	{
+		width: 75%;
+		padding: 20px;
+	}
+	.portfolio-heading span
+	{
+		padding: 0 5px;
+		font: normal normal normal 20px/36px Playfair Display;
+	}
+
+    
+    
+}
+@media only screen and (max-width: 576px) {
+	.home1 .center-text p
+    {
+        padding: 0 !important;
+        text-align: center !important;
+        
+    }
+    .home1 .center-text .heading
+    {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    .vertical-text
+    {
+        font-size: 35px;
+    }
+	.service-banner .service-text h2 span::after, .service-banner .service-text h2 span::before
+	{
+		display: none;
+	}
+	.service-banner .service-text p a
+	{
+		font: normal normal 400 12px/25px Segoe UI;
+		padding: 0 15px;
+	}
+	.home3 .common-contact-text .name, .home3 .common-contact-text p
+	{
+		font-size: 16px;
+	}	
+	.service-details-banner .container:before
+	{
+		right: 0;
+	}
+	.site-management .col-lg-5 img 
+	{
+		width: 70px;
+	}
+	.site-management .heading
+	{
+		font: normal normal normal 30px/40px Playfair Display;
+		margin-bottom: 0 !important;
+	}
+	.we-specialise .col-lg-12 .links a
+	{
+		font: normal normal bold 16px/20px Segoe UI;
+		letter-spacing: 2px;
+	}
+	.we-specialise .col-lg-12 .links a
+	{
+		width: 75%;
+		padding: 15px;
+	}
+	.portfolio-heading span
+	{
+		letter-spacing: 5px;
+	}
+	.all-careers .carrers-box .button-side a, .upload-btn, .upload-btn2
+	{
+		padding: 5px 5px 5px 10px;
+	}
+	.all-careers .carrers-box
+	{
+		display: block !important;
+		text-align: center;
+	}
+	.all-careers .carrers-box .text-side
+	{
+		margin-bottom: 20px;
+	}
+	.all-careers .carrers-box p
+	{
+		text-align: center;
+	}
+
+}
+@media only screen and (max-width: 425px)
+{
+	.service-banner .service-text h2 span
+	{
+		letter-spacing: 10px;
+	}
+	.site-management .heading
+	{
+		font-size: 25px;
+	}
+	.big-heading
+	{
+		font: normal normal normal 40px/60px Playfair Display;
+	}
+	.we-specialise .col-lg-12 .links a
+	{
+		padding: 10px;
+		font-size: 14px;
+	}
+	.career-details .heading {
+		font: normal normal 800 35px/45px Playfair Display;
+	}
+}
