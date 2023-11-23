@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
 
 // var
 $color_1: #121848;
@@ -6,7 +6,7 @@ $color_1: #121848;
 // mixin
 @mixin nav-link {
   color: #fff;
-  font-family: "Inter";
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -24,7 +24,7 @@ $color_1: #121848;
   font-size: 16px;
   border: 0;
   color: #fff;
-  font-family: Inter;
+  font-family: 'Nunito', sans-serif;
   border: 1px solid $color_1;
   font-style: normal;
   font-weight: 600;
@@ -32,7 +32,7 @@ $color_1: #121848;
 }
 @mixin body-style {
   color: #191919;
-  font-family: Inter;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -40,7 +40,7 @@ $color_1: #121848;
 }
 @mixin heading1 {
   color: #000;
-  font-family: Inter;
+  font-family: 'Nunito', sans-serif;
   font-size: 45px;
   font-style: normal;
   font-weight: bold;
@@ -66,7 +66,7 @@ $color_1: #121848;
 }
 @mixin big-heading {
   text-align: left;
-  font: normal normal bold 65px/80px Inter;
+  font: normal normal bold 65px/80px 'Nunito', sans-serif;
   letter-spacing: 0px;
   color: #d1d1d1;
   opacity: 1;
@@ -137,7 +137,7 @@ a {
   }
 }
 .sub-title {
-  font: normal normal 500 12px/22px Inter;
+  font: normal normal 500 12px/22px 'Nunito', sans-serif;
   letter-spacing: 2.8px;
   color: $color_1;
   text-transform: uppercase;
@@ -198,7 +198,7 @@ header {
         // border: 1px solid #cccccc;
         a {
           color: #000;
-          font-family: Inter;
+          font-family: 'Nunito', sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
@@ -221,7 +221,7 @@ header {
     }
     .header-btn {
       background-color: #1faf38;
-      font-family: Inter;
+      font-family: 'Nunito', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
@@ -261,7 +261,7 @@ footer {
 
     .footer-menu {
       p {
-        font-family: Inter;
+        font-family: 'Nunito', sans-serif;
         font-size: 25px;
         font-style: normal;
         font-weight: 400;
@@ -273,7 +273,7 @@ footer {
       }
       ul {
         li {
-          font-family: Inter;
+          font-family: 'Nunito', sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
@@ -301,7 +301,7 @@ footer {
     p {
       margin: 0;
       color: #fff;
-      font-family: Inter;
+      font-family: 'Nunito', sans-serif;
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
@@ -324,27 +324,26 @@ footer {
   .container-fluid {
     .carousel-caption {
       position: absolute;
-      left: 50%;
-      top: 50%;
-      translate: -50% -50%;
+      left: 5%;
+      top: 5%;
+      bottom: inherit;    
       text-align: left;
       width: 70%;
       z-index: 99;
       transition: 1.5s ease all;
       h1 {
-        color: #fff;
-        font: normal normal bold 60px/70px Inter;
-        text-align: center;
+        color: #000;
+        font: normal normal 800 60px/70px 'Nunito', sans-serif;
+        text-align: left;
       }
       p {
         color: #000;
         text-align: left;
-        font-family: "Inter";
+        font-family: 'Nunito', sans-serif;
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 129.9%;
-        text-align: center;
+        font-weight: 500;
+        line-height: 129.9%;        
       }
     }
     .carousel-indicators {
@@ -396,7 +395,7 @@ footer {
     z-index: 99;
     padding: 15px 12px;
     label {
-      font: normal normal 500 15px/20px Inter;
+      font: normal normal 500 15px/20px 'Nunito', sans-serif;
       color: #000;
       display: block;
       white-space: nowrap;
@@ -422,7 +421,7 @@ footer {
       background-color: #1218482e;
       color: $color_1;
       border-radius: 50%;
-      font: normal normal normal 22px/25px Inter;
+      font: normal normal normal 22px/25px 'Nunito', sans-serif;
     }
     .search-btn {
       border: 0;
@@ -447,7 +446,7 @@ footer {
   padding: 15px 12px;
   box-shadow: rgba(21, 31, 48, 0.03) 0px 30px 30px;
   label {
-    font: normal normal 500 15px/20px Inter;
+    font: normal normal 500 15px/20px 'Nunito', sans-serif;
     color: #000;
     display: block;
     white-space: nowrap;
@@ -473,7 +472,7 @@ footer {
     background-color: #1218482e;
     color: $color_1;
     border-radius: 50%;
-    font: normal normal normal 22px/25px Inter;
+    font: normal normal normal 22px/25px 'Nunito', sans-serif;
   }
   .search-btn {
     border: 0;
@@ -499,13 +498,13 @@ footer {
     background: transparent;
     h3 {
       .withouthover {
-        font: normal normal 500 24px/30px Inter;
+        font: normal normal 500 24px/30px 'Nunito', sans-serif;
         color: #000;
         width: 70%;
         display: block;
       }
       .withhover {
-        font: normal normal 400 16px/24px Inter;
+        font: normal normal 400 16px/24px 'Nunito', sans-serif;
         color: #fff;
         display: none;
       }
@@ -564,10 +563,10 @@ footer {
   padding: 30px 0;
   .counter-box {
     .number {
-      font: normal normal bold 25px/25px Inter;
+      font: normal normal bold 25px/25px 'Nunito', sans-serif;
     }
     .text {
-      font: normal normal 500 16px/18px Inter;
+      font: normal normal 500 16px/18px 'Nunito', sans-serif;
     }
   }
 }
@@ -610,7 +609,7 @@ footer {
   margin-right: -40px;
 }
 .sub-text {
-  font: normal normal 500 18px/30px Inter;
+  font: normal normal 500 18px/30px 'Nunito', sans-serif;
   color: #191919;
 }
 .home2 {
@@ -649,7 +648,7 @@ footer {
   }
   .nav-pills {
     .nav-link {
-      font: normal normal 500 20px/24px Inter;
+      font: normal normal 500 20px/24px 'Nunito', sans-serif;
       border-radius: 30px;
       padding: 15px 30px;
       color: #121848;
@@ -833,7 +832,7 @@ footer {
   }
 }
 .form-control {
-  font: normal normal 500 16px/30px Inter;
+  font: normal normal 500 16px/30px 'Nunito', sans-serif;
   background-color: #fff;
   border: 0;
   padding: 10px 15px;
@@ -842,7 +841,7 @@ footer {
 // modal css
 .popular-cities {
   h5 {
-    font: normal normal bold 16px/30px Inter;
+    font: normal normal bold 16px/30px 'Nunito', sans-serif;
     color: #000;
     margin-bottom: 25px;
   }
@@ -868,7 +867,7 @@ footer {
         }
       }
       p {
-        font: normal normal normal 14px/24px Inter;
+        font: normal normal normal 14px/24px 'Nunito', sans-serif;
         text-transform: uppercase;
       }
       &:hover {
@@ -941,7 +940,7 @@ footer {
 }
 .breadcrumb {
   .breadcrumb-item {
-    font: normal normal bold 15px/20px Inter;
+    font: normal normal bold 15px/20px 'Nunito', sans-serif;
     color: $color_1;
     a {
       font-weight: normal;
@@ -963,7 +962,7 @@ footer {
         border: 0;
         width: 100%;
         text-align: center;
-        font: normal normal bold 16px/20px Inter;
+        font: normal normal bold 16px/20px 'Nunito', sans-serif;
         border-bottom: 2px solid transparent;
         border-radius: 0;
         color: #191919;
@@ -991,15 +990,15 @@ footer {
     text-align: center;
     position: relative;
     h2 {
-      font: normal normal bold 25px/30px Inter;
+      font: normal normal bold 25px/30px 'Nunito', sans-serif;
       color: $color_1;
     }
     h4 {
-      font: normal normal bold 18px/25px Inter;
+      font: normal normal bold 18px/25px 'Nunito', sans-serif;
       color: #000;
     }
     p {
-      font: normal normal normal 14px/20px Inter;
+      font: normal normal normal 14px/20px 'Nunito', sans-serif;
       color: #000;
       opacity: 0.5;
       margin-bottom: 0;
@@ -1032,7 +1031,7 @@ footer {
 }
 
 .primary-link {
-  font: normal normal 500 22px/25px Inter;
+  font: normal normal 500 22px/25px 'Nunito', sans-serif;
   text-decoration: underline !important;
   color: $color_1;
 }
@@ -1119,7 +1118,7 @@ footer {
       }
       p,
       span {
-        font: normal normal bold 15px/20px Inter;
+        font: normal normal bold 15px/20px 'Nunito', sans-serif;
         color: #000;
         margin-bottom: 0;
       }
@@ -1278,12 +1277,12 @@ footer {
       padding: 20px 15px 30px;
       background-color: #fff;
       h6 {
-        font: normal normal bold 16px/20px Inter;
+        font: normal normal bold 16px/20px 'Nunito', sans-serif;
         color: $color_1;
         margin-bottom: 0;
       }
       p {
-        font: normal normal 500 14px/20px Inter;
+        font: normal normal 500 14px/20px 'Nunito', sans-serif;
         color: #000;
         margin-bottom: 0;
       }
@@ -1305,7 +1304,7 @@ footer {
       padding: 10px;
       text-align: left;
       p {
-        font: normal normal 500 15px/25px Inter;
+        font: normal normal 500 15px/25px 'Nunito', sans-serif;
         color: #fff;
       }
     }
@@ -1318,7 +1317,7 @@ footer {
 }
 .heading-div {
   h1 {
-    font: normal normal bold 50px/70px Inter;
+    font: normal normal bold 50px/70px 'Nunito', sans-serif;
     text-align: center;
     span {
       color: $color_1;
@@ -1343,7 +1342,7 @@ footer {
 }
 .download-section {
   p {
-    font: normal normal normal 16px/30px Inter;
+    font: normal normal normal 16px/30px 'Nunito', sans-serif;
     color: #000;
     i {
       font-size: 25px;
@@ -1355,7 +1354,7 @@ footer {
       align-items: center;
       border-radius: 8px;
       border: 1px solid $color_1;
-      font: normal normal normal 14px/24px Inter;
+      font: normal normal normal 14px/24px 'Nunito', sans-serif;
       color: #000;
       padding: 2px 10px;
       i {
@@ -1371,7 +1370,7 @@ footer {
     }
   }
   .title {
-    font: normal normal normal 18px/30px Inter;
+    font: normal normal normal 18px/30px 'Nunito', sans-serif;
     color: #000;
   }
   .btn-primary {
@@ -1414,7 +1413,7 @@ footer {
     padding: 12px 20px;
     border-radius: 50px;
     border: 1px solid #707070;
-    font: normal normal normal 15px/25px Inter;
+    font: normal normal normal 15px/25px 'Nunito', sans-serif;
     background-color: transparent;
   }
   .dropdown-toggle {
@@ -1439,7 +1438,7 @@ footer {
     position: relative;
     input {
       padding: 13px 40px;
-      font: normal normal normal 16px/22px Inter;
+      font: normal normal normal 16px/22px 'Nunito', sans-serif;
       border: 1px solid #ddd;
     }
     i {
@@ -1456,7 +1455,7 @@ footer {
       border: 1px solid rgb(232, 232, 232);
       border-radius: 100vw;
       padding: 8px 25px;
-      font: normal normal 400 13px/25px Inter;
+      font: normal normal 400 13px/25px 'Nunito', sans-serif;
       background-color: transparent;
       margin: 4px;
       &:hover {
@@ -1479,7 +1478,7 @@ footer {
     position: relative;
     height: 100%;
     overflow: hidden;
-    cursor: pointer;
+    cursor: po'Nunito', sans-serif;
     img {
       height: 100%;
       object-fit: cover;
@@ -1493,7 +1492,7 @@ footer {
         display: inline-block;
         background-color: #fff;
         border-radius: 20px;
-        font: normal normal 500 12px/15px Inter;
+        font: normal normal 500 12px/15px 'Nunito', sans-serif;
         color: #000;
         padding: 5px 10px;
         i {
@@ -1509,14 +1508,14 @@ footer {
       position: absolute;
       right: 10px;
       top: 10px;
-      cursor: pointer;
+      cursor: po'Nunito', sans-serif;
       &:hover {
         color: $color_1;
         font-weight: bold;
       }
     }
     h4 {
-      font: normal normal 600 20px/25px Inter;
+      font: normal normal 600 20px/25px 'Nunito', sans-serif;
       color: #000;
       margin-bottom: 0;
       .badge {
@@ -1530,14 +1529,14 @@ footer {
       }
     }
     p {
-      font: normal normal 600 12px/17px Inter;
+      font: normal normal 600 12px/17px 'Nunito', sans-serif;
       color: #707070;
     }
     .types1 {
       span {
         display: flex;
         align-items: center;
-        font: normal normal 600 13px/15px Inter;
+        font: normal normal 600 13px/15px 'Nunito', sans-serif;
         i {
           width: 30px;
           height: 30px;
@@ -1553,11 +1552,11 @@ footer {
     }
     .types2 {
       label {
-        font: normal normal 300 12px/16px Inter;
+        font: normal normal 300 12px/16px 'Nunito', sans-serif;
         margin-bottom: 10px;
       }
       a {
-        font: normal normal 300 13px/16px Inter;
+        font: normal normal 300 13px/16px 'Nunito', sans-serif;
         border-radius: 40px;
         border: 0.6px solid rgb(190, 190, 190);
         padding: 7px 15px;
@@ -1571,13 +1570,13 @@ footer {
     }
     .types3 {
       label {
-        font: normal normal 300 12px/16px Inter;
+        font: normal normal 300 12px/16px 'Nunito', sans-serif;
         margin-bottom: 0px;
       }
       h4 {
-        font: nomral nomral 500 18px/24px Inter;
+        font: nomral nomral 500 18px/24px 'Nunito', sans-serif;
         sub {
-          font: nomral nomral 500 14px/20px Inter;
+          font: nomral nomral 500 14px/20px 'Nunito', sans-serif;
         }
       }
       .btn {
@@ -1611,7 +1610,7 @@ footer {
     .nav-item {
       width: 50%;
       .nav-link {
-        font: normal normal 500 15px/30px Inter;
+        font: normal normal 500 15px/30px 'Nunito', sans-serif;
         color: #333333;
         border-radius: 50px !important;
         background: #fff;
@@ -1640,7 +1639,7 @@ footer {
       padding: 5px 10px;
       margin-bottom: 15px;
       .form-control {
-        font: normal normal 500 15px/25px Inter;
+        font: normal normal 500 15px/25px 'Nunito', sans-serif;
         color: #333;
         border: 0;
         &:focus {
@@ -1662,7 +1661,7 @@ footer {
   }
   p {
     color: #000;
-    font: normal normal normal 15px/20px Inter;
+    font: normal normal normal 15px/20px 'Nunito', sans-serif;
     i {
       color: green;
       font-size: 40px;
@@ -1670,7 +1669,7 @@ footer {
   }
   .submit-btn {
     width: 100%;
-    font: normal normal 500 16px/24px Inter;
+    font: normal normal 500 16px/24px 'Nunito', sans-serif;
     background-color: $color_1;
     border: 0;
     color: #fff;
@@ -1699,7 +1698,7 @@ footer {
     text-align: center;
     a {
       color: #fff;
-      font: normal normal 500 16px/30px Inter;
+      font: normal normal 500 16px/30px 'Nunito', sans-serif;
       padding: 10px 0;
       margin: 0 15px;
       border-bottom: 2px solid transparent;
@@ -1814,7 +1813,7 @@ footer {
   }
   .video-box {
     position: relative;
-    cursor: pointer;
+    cursor: po'Nunito', sans-serif;
     i {
       position: absolute;
       left: 50%;
@@ -1847,7 +1846,7 @@ footer {
     display: flex;
     justify-content: space-between;
     a {
-      font: normal normal 500 18px/30px Inter;
+      font: normal normal 500 18px/30px 'Nunito', sans-serif;
       text-align: center;
       margin: 0 auto;
       padding: 15px;
@@ -1876,7 +1875,7 @@ footer {
   .tabs-content {
     padding-top: 70px;
     .title {
-      font: normal normal 600 22px/35px Inter;
+      font: normal normal 600 22px/35px 'Nunito', sans-serif;
       text-align: left;
       color: $color_1;
     }
@@ -1914,7 +1913,7 @@ footer {
       border: 1px solid rgb(190, 190, 190);
       padding: 6px 12px;
       text-align: center;
-      font: normal normal normal 13px/15px Inter;
+      font: normal normal normal 13px/15px 'Nunito', sans-serif;
       color: $color_1;
       border-radius: 30px;
       display: inline-flex;
@@ -1931,11 +1930,11 @@ footer {
       border-radius: 6px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
       .head-title {
-        font: normal normal 500 15px/18px Inter;
+        font: normal normal 500 15px/18px 'Nunito', sans-serif;
         color: $color_1;
       }
       p {
-        font: normal normal 400 13px/18px Inter;
+        font: normal normal 400 13px/18px 'Nunito', sans-serif;
         color: #000;
       }
       .tab-list-box {
@@ -1947,7 +1946,7 @@ footer {
             border: 0;
             background: transparent;
             border-radius: 30px;
-            font: normal normal 400 13px/18px Inter;
+            font: normal normal 400 13px/18px 'Nunito', sans-serif;
             color: #000;
           }
           .active {
@@ -2009,13 +2008,13 @@ footer {
     padding: 10px;
   }
   .banner .container-fluid .carousel-caption h1 {
-    font: normal normal bold 40px/50px Inter;
+    font: normal normal bold 40px/50px 'Nunito', sans-serif;
   }
   .heading {
     font-size: 35px !important;
   }
   .big-heading {
-    font: normal normal bold 50px/60px Inter;
+    font: normal normal bold 50px/60px 'Nunito', sans-serif;
   }
   .big-heading br,
   .heading br {
@@ -2030,7 +2029,7 @@ footer {
   }
   .pg-box .details-box .types3 h4 {
     margin-bottom: 10px;
-    font: normal normal 500 18px/24px Inter;
+    font: normal normal 500 18px/24px 'Nunito', sans-serif;
   }
   .pg-box .details-box .types3 .btn {
     padding: 10px 15px;
@@ -2038,7 +2037,7 @@ footer {
   }
   .heading-div h1
   {
-    font: normal normal bold 40px/50px Inter;
+    font: normal normal bold 40px/50px 'Nunito', sans-serif;
   }
   .house-section .tab-bar
   {
@@ -2058,7 +2057,7 @@ footer {
     top: 30%;
   }
   .banner .container-fluid .carousel-caption h1 {
-    font: normal normal bold 30px/40px Inter;
+    font: normal normal bold 30px/40px 'Nunito', sans-serif;
   }
   .banner .container-fluid .carousel-indicators {
     bottom: -50px;
@@ -2114,7 +2113,7 @@ footer {
     padding: 30px;
   }
   .sub-text {
-    font: normal normal 500 15px/25px Inter;
+    font: normal normal 500 15px/25px 'Nunito', sans-serif;
   }
 
   .btn-close {
@@ -2143,7 +2142,7 @@ footer {
 }
 @media only screen and (max-width: 576px) {
   .banner .container-fluid .carousel-caption h1 {
-    font: normal normal bold 20px/30px Inter;
+    font: normal normal bold 20px/30px 'Nunito', sans-serif;
   }
   .banner {
     padding-top: 20px !important;
@@ -2156,7 +2155,7 @@ footer {
     }
   }
   .home2 .nav-pills .nav-link {
-    font: normal normal 500 16px/18px Inter;
+    font: normal normal 500 16px/18px 'Nunito', sans-serif;
     padding: 15px 20px;
   }
   .home5 .contact-form {
@@ -2166,11 +2165,11 @@ footer {
     padding: 17px 5px;
   }
   .big-heading {
-    font: normal normal bold 40px/50px Inter;
+    font: normal normal bold 40px/50px 'Nunito', sans-serif;
   }
   .heading-div h1
   {
-    font: normal normal bold 30px/40px Inter;
+    font: normal normal bold 30px/40px 'Nunito', sans-serif;
   }
   .partner-page .container-fluid
   {
@@ -2191,7 +2190,7 @@ footer {
 }
 @media only screen and (max-width: 425px) {
   .banner .container-fluid .carousel-caption h1 {
-    font: normal normal bold 16px/24px Inter;
+    font: normal normal bold 16px/24px 'Nunito', sans-serif;
   }
   .banner .container-fluid .carousel-caption p {
     font-size: 14px;

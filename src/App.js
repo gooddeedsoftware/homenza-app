@@ -1,32 +1,51 @@
-import logo from './logo.svg';
+import React, { useCallback, useEffect } from 'react';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+import Header from './component/layout/header';
+import Footer from './component/layout/footer';
 import './App.css';
-import Banner from './component/banner';
-import Header from './component/header';
-import Container from './component/container';
-import Footer from './component/footer';
+import './assets/css/bootstrap.min.css';
+import './assets/scss/style.css';
+//import './assets/js/custom';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'owl.carousel/dist/assets/owl.carousel.min.css';
+import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+import Home from './component/pages/home';
+import AboutUs from './component/pages/aboutUs';
+import Properties from './component/pages/properties';
+import Team from './component/pages/team';
+import Partners from './component/pages/partners';
 
 function App() {
+  // Scroll event
+  const handleScroll = useCallback(() => {
+    var sticky = document.querySelector('.sticky');
+    var scroll = window.scrollY; 
+
+    if (scroll >= 400) sticky.classList.add('fixed');
+    else sticky.classList.remove('fixed');
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <Banner />
-      <Container />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/properties" element={<Properties />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/partners" element={<Partners />} />
+      </Routes>
       <Footer />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+    </Router>
+
   );
 }
 

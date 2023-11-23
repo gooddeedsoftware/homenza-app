@@ -1,10 +1,12 @@
 import React from 'react';
-import '../assets/css/bootstrap.min.css';
+import '../../assets/css/bootstrap.min.css';
+import Banner from './banner';
 
 
-function Home1() {
+function Home() {
   return (
     <div>
+    <Banner />
     <div className="home1">
       <div className="container">
         <div className="row align-items-center">
@@ -206,4 +208,4 @@ function Home1() {
   );
 }
 
-export default Home1;
+export default Home;
