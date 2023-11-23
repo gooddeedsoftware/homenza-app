@@ -1,10 +1,17 @@
-import React from "react"
+import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBed } from '@fortawesome/free-solid-svg-icons';
 
 function PropertyDetail() {
+    const [activeTab, setActiveTab] = useState('one');
+
+    const handleTabClick = (tabId) => {
+        setActiveTab(tabId);
+    };
     return (
         <>
             <div class="container-fluid px-lg-5 pt-4 pb-5">
-                <nav  style={{ '--bs-breadcrumb-divider': '>' }} aria-label="breadcrumb">
+                <nav style={{ '--bs-breadcrumb-divider': '>' }} aria-label="breadcrumb">
                     <ol class="breadcrumb ">
                         <li class="breadcrumb-item"><a href="#">Homenza</a></li>
                         <li class="breadcrumb-item"><a href="#">Chennai</a></li>
@@ -61,29 +68,32 @@ function PropertyDetail() {
                                     <div class="col-6">
                                         <div class="video-box" data-bs-toggle="modal" data-bs-target="#Videomodal">
                                             <img src="https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/e_improve/e_sharpen:10/e_saturation:10/v1613119932/Website/CMS-Uploads/mez5xzcayynyv80ef1lk.jpg" alt="" class="rounded-4 w-100" />
-                                                <i class="fa fa-play-circle"></i>
+                                            <i class="fa fa-play-circle"></i>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="video-box" data-bs-toggle="modal" data-bs-target="#Videomodal">
                                             <img src="https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto/e_improve/e_sharpen:10/e_saturation:10/v1613119932/Website/CMS-Uploads/mez5xzcayynyv80ef1lk.jpg" alt="" class="rounded-4 w-100" />
-                                                <i class="fa fa-play-circle"></i>
+                                            <i class="fa fa-play-circle"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-bar">
-                                <a href="#one" class="active">Occupancy</a>
-                                <a href="#two">Amenities</a>
-                                <a href="#three">Details</a>
+                                <a className={activeTab === 'one' ? 'active' : ''}
+                                    onClick={() => handleTabClick('one')}>Occupancy</a>
+                                <a className={activeTab === 'two' ? 'active' : ''}
+                                    onClick={() => handleTabClick('two')}>Amenities</a>
+                                <a className={activeTab === 'three' ? 'active' : ''}
+                                    onClick={() => handleTabClick('three')}>Details</a>
                             </div>
-                            <div class="tabs-content" id="one">
+                            <div class="tabs-content" id="one" style={{ display: activeTab === 'one' ? 'block' : 'none' }}>
                                 <p class="title mb-4">Available Occupancies</p>
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6 col-6">
                                         <div class="available-box text-center my-4">
                                             <span class="bed-badge">
-                                                <i class="fa fa-bed"></i> X <strong>2</strong>
+                                                <FontAwesomeIcon icon={faBed} /> X <strong>2</strong>
                                             </span>
                                             <p class="mb-1">Double Occupancy</p>
                                             <h6><strong>₹9,199/mo*</strong></h6>
@@ -92,7 +102,7 @@ function PropertyDetail() {
                                     <div class="col-md-4 col-sm-6 col-6">
                                         <div class="available-box text-center my-4">
                                             <span class="bed-badge">
-                                                <i class="fa fa-bed"></i> X <strong>2</strong>
+                                                <FontAwesomeIcon icon={faBed} /> X <strong>2</strong>
                                             </span>
                                             <p class="mb-1">Double Occupancy</p>
                                             <h6><strong>₹9,199/mo*</strong></h6>
@@ -101,7 +111,7 @@ function PropertyDetail() {
                                     <div class="col-md-4 col-sm-6 col-6">
                                         <div class="available-box text-center my-4">
                                             <span class="bed-badge">
-                                                <i class="fa fa-bed"></i> X <strong>2</strong>
+                                                <FontAwesomeIcon icon={faBed} /> X <strong>2</strong>
                                             </span>
                                             <p class="mb-1">Double Occupancy</p>
                                             <h6><strong>₹9,199/mo*</strong></h6>
@@ -109,7 +119,7 @@ function PropertyDetail() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="tabs-content" id="two">
+                            <div class="tabs-content" id="two" style={{ display: activeTab === 'two' ? 'block' : 'none' }}>
                                 <p class="title mb-4">Amenities</p>
                                 <a href="" class="tab-btn me-3 mb-3"><i class="fa fa-home"></i> Atteched Bathroom</a>
                                 <a href="" class="tab-btn me-3 mb-3"><i class="fa fa-home"></i> Atteched Bathroom</a>
@@ -126,7 +136,7 @@ function PropertyDetail() {
                                     <a href="" class="tab-btn me-3 mb-3"><i class="fa fa-home"></i> Hot and Delicious Meals</a>
                                 </div>
                             </div>
-                            <div class="tabs-content" id="three">
+                            <div class="tabs-content" id="three" style={{ display: activeTab === 'three' ? 'block' : 'none' }}>
                                 <p class="title mb-4">Food Menu</p>
                                 <div class="food-menu-box ">
                                     <div class="row m-0">
@@ -398,12 +408,12 @@ function PropertyDetail() {
                                                 <p class="mb-0 "><span class="d-flex align-items-center "> <i class="fa fa-whatsapp me-2"></i> Get updates over WhatsApp</span></p>
                                                 <div class="form-check form-switch">
                                                     <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked />
-                                                        <label class="form-check-label" for="mySwitch"></label>
+                                                    <label class="form-check-label" for="mySwitch"></label>
                                                 </div>
                                             </div>
                                             <div class="form__privacy d-flex align-items-center mb-3">
                                                 <input id="checkbox" name="checkbox" type="checkbox" required />
-                                                    <label for="checkbox" class="ps-2">I have read and agreed to the <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a></label>
+                                                <label for="checkbox" class="ps-2">I have read and agreed to the <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a></label>
                                             </div>
                                             <input type="submit" class="submit-btn" value="Schedule a Visit" />
 
@@ -432,12 +442,12 @@ function PropertyDetail() {
                                                 <p class="mb-0 "><span class="d-flex align-items-center "> <i class="fa fa-whatsapp me-2"></i> Get updates over WhatsApp</span></p>
                                                 <div class="form-check form-switch">
                                                     <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked />
-                                                        <label class="form-check-label" for="mySwitch"></label>
+                                                    <label class="form-check-label" for="mySwitch"></label>
                                                 </div>
                                             </div>
                                             <div class="form__privacy d-flex align-items-center mb-3">
                                                 <input id="checkbox" name="checkbox" type="checkbox" required />
-                                                    <label for="checkbox" class="ps-2">I have read and agreed to the <a href="">Terms & Conditions</a></label>
+                                                <label for="checkbox" class="ps-2">I have read and agreed to the <a href="">Terms & Conditions</a></label>
                                             </div>
                                             <input type="submit" class="submit-btn" value="Request a callback" />
 

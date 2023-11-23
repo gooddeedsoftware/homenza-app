@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 function Properties() {
     return (
@@ -73,7 +74,7 @@ function Properties() {
                                     <div class="col-lg-8 col-md-8">
                                         <div class="details-box">
                                             <i class="fa fa-heart-o"></i>
-                                            <a href="city-details.php"><h4 class="title">Columbus House <span class="badge ms-3">Almost Full</span></h4></a>
+                                            <Link to={'/property-details'}><h4 class="title">Columbus House <span class="badge ms-3">Almost Full</span></h4></Link>
                                             <p class="mb-4">OMR</p>
                                             <div class="d-flex align-items-center justify-content-between types1 mb-4">
                                                 <div class="d-flex align-items-center">

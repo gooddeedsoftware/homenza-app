@@ -10,11 +10,14 @@ import './assets/scss/style.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+
 import Home from './component/pages/home';
 import AboutUs from './component/pages/aboutUs';
 import Properties from './component/pages/properties';
 import Team from './component/pages/team';
 import Partners from './component/pages/partners';
+import PropertyDetail from './component/pages/PropertyDetail';
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 function App() {
   // Scroll event
@@ -42,6 +45,7 @@ function App() {
         <Route path="/properties" element={<Properties />} />
         <Route path="/team" element={<Team />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/property-details" element={<PropertyDetail />} />
       </Routes>
       <Footer />
     </Router>
