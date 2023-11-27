@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBed } from '@fortawesome/free-solid-svg-icons';
 
 function PropertyDetail() {
     const [activeTab, setActiveTab] = useState('one');
@@ -93,7 +91,7 @@ function PropertyDetail() {
                                     <div class="col-md-4 col-sm-6 col-6">
                                         <div class="available-box text-center my-4">
                                             <span class="bed-badge">
-                                                <FontAwesomeIcon icon={faBed} /> X <strong>2</strong>
+                                                <i class="fa fa-bed"></i> X <strong>2</strong>
                                             </span>
                                             <p class="mb-1">Double Occupancy</p>
                                             <h6><strong>₹9,199/mo*</strong></h6>
@@ -102,7 +100,7 @@ function PropertyDetail() {
                                     <div class="col-md-4 col-sm-6 col-6">
                                         <div class="available-box text-center my-4">
                                             <span class="bed-badge">
-                                                <FontAwesomeIcon icon={faBed} /> X <strong>2</strong>
+                                                <i class="fa fa-bed"></i> X <strong>2</strong>
                                             </span>
                                             <p class="mb-1">Double Occupancy</p>
                                             <h6><strong>₹9,199/mo*</strong></h6>
@@ -111,7 +109,7 @@ function PropertyDetail() {
                                     <div class="col-md-4 col-sm-6 col-6">
                                         <div class="available-box text-center my-4">
                                             <span class="bed-badge">
-                                                <FontAwesomeIcon icon={faBed} /> X <strong>2</strong>
+                                                <i class="fa fa-bed"></i> X <strong>2</strong>
                                             </span>
                                             <p class="mb-1">Double Occupancy</p>
                                             <h6><strong>₹9,199/mo*</strong></h6>
